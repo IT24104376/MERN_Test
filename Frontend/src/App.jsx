@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import dotenv from 'dotenv'
+
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 const API_URL = `${BASE_URL}/api/students`;

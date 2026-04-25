@@ -5,7 +5,11 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(cors({ origin: 'https://mern-test-steel.vercel.app/' || 'localhost:3000' }));
+app.use(cors({ 
+  origin: 'https://mern-test-steel.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(express.json());
 
 mongoose
